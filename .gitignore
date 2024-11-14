@@ -1,0 +1,19 @@
+# General PHP
+/vendor/
+*.log
+*.cache
+.DS_Store
+
+# Node.js (para Angular)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.npm*
+.yarn*
+
+# Archivos de configuración local
+.env
+config/local.php
+
+# Archivos temporales
+*.swp
