@@ -141,8 +141,9 @@ class Controller
         return $response->withHeader('Content-Type', 'application/json');
     }
 
-    public function updateElementsByBlocks(Request $request, Response $response, string $id): Response
+    public function updateElementsByBlocks(Request $request, Response $response, array $args): Response
     {
+        $id = $args['id'];
         $body = $request->getParsedBody();
         $elementosDelBloque = $body['elementos_del_bloque'] ?? null;
 
